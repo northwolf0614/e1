@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "markModel/Mark.h"
+#import "Mark.h"
 
 
 @interface CanvasView : UIView

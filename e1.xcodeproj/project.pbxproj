@@ -30,11 +30,6 @@
 		094C79DB1945CC7300205BCA /* redo.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C79D81945CC7300205BCA /* redo.png */; };
 		094C79DC1945CC7300205BCA /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 094C79D91945CC7300205BCA /* clear.png */; };
 		094C79DF19466DDE00205BCA /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094C79DE19466DDE00205BCA /* ExerciseViewController.m */; };
-		095BE5C31919C23300C968DE /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 095BE5C11919C23300C968DE /* Scribble.m */; };
-		095BE5C61919D1B800C968DE /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 095BE5C41919D1B800C968DE /* ScribbleMemento.m */; };
-		096BAB5C192196C000388D23 /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BAB5B192196C000388D23 /* ScribbleThumbnailView.m */; };
-		096BAB5F192199DE00388D23 /* ScribbleThumbnaiViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BAB5E192199DD00388D23 /* ScribbleThumbnaiViewProxy.m */; };
-		096BAB621921D06400388D23 /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BAB611921D06400388D23 /* ScribbleManager.m */; };
 		0988361A193056D00061BD70 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09883619193056D00061BD70 /* MessageUI.framework */; };
 		098A203C19441E9300E7ECA1 /* BuildCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098A203B19441E9300E7ECA1 /* BuildCardViewController.m */; };
 		098A203F1944870F00E7ECA1 /* LearningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098A203E1944870F00E7ECA1 /* LearningViewController.m */; };
@@ -62,9 +57,6 @@
 		09B913EC192D8AB700A16F08 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B913EB192D8AB700A16F08 /* AboutViewController.m */; };
 		09B913EF192DB56C00A16F08 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B913EE192DB56C00A16F08 /* WebViewController.m */; };
 		09BC254C194959B8009A7C64 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BC254B194959B8009A7C64 /* MediaPlayer.framework */; };
-		09BD63DE1919093500837015 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD63D71919093500837015 /* Vertex.m */; };
-		09BD63DF1919093500837015 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD63D91919093500837015 /* Stroke.m */; };
-		09BD63E01919093500837015 /* Dot.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09BD63DC1919093500837015 /* Dot.mm */; };
 		09E7803018BC77B500A4D4F6 /* AccessCharWithDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E7802F18BC77B500A4D4F6 /* AccessCharWithDatabase.m */; };
 		09E7803218BC7BB200A4D4F6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E7803118BC7BB200A4D4F6 /* AVFoundation.framework */; };
 		09EDB9FC1917914600975C41 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 098E3E8A19132CA30041046A /* res */; };
@@ -80,6 +72,14 @@
 		09F70C1219357F0300619786 /* addLearningPackage.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F70C1119357F0300619786 /* addLearningPackage.png */; };
 		09F70C141935F74E00619786 /* packageNameIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F70C131935F74D00619786 /* packageNameIcon.png */; };
 		09F9486619491CDE0005BEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F9486519491CDE0005BEA9 /* Main.storyboard */; };
+		E1A9A4ED194F04ED00D4C9AC /* Dot.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1A9A4DC194F04ED00D4C9AC /* Dot.mm */; };
+		E1A9A4EE194F04ED00D4C9AC /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9A4DF194F04ED00D4C9AC /* Scribble.m */; };
+		E1A9A4EF194F04ED00D4C9AC /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9A4E1194F04ED00D4C9AC /* ScribbleManager.m */; };
+		E1A9A4F0194F04ED00D4C9AC /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9A4E4194F04ED00D4C9AC /* ScribbleMemento.m */; };
+		E1A9A4F1194F04ED00D4C9AC /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9A4E6194F04ED00D4C9AC /* ScribbleThumbnailView.m */; };
+		E1A9A4F2194F04ED00D4C9AC /* ScribbleThumbnaiViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9A4E8194F04ED00D4C9AC /* ScribbleThumbnaiViewProxy.m */; };
+		E1A9A4F3194F04ED00D4C9AC /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9A4EA194F04ED00D4C9AC /* Stroke.m */; };
+		E1A9A4F4194F04ED00D4C9AC /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9A4EC194F04ED00D4C9AC /* Vertex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,17 +128,6 @@
 		094C79DD19466DDE00205BCA /* ExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
 		094C79DE19466DDE00205BCA /* ExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
 		09553C39192092530091DE87 /* Dropbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dropbox.h; path = dropbox/Dropbox.framework/Headers/Dropbox.h; sourceTree = "<group>"; };
-		095BE5C11919C23300C968DE /* Scribble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Scribble.m; path = markModel/Scribble.m; sourceTree = "<group>"; };
-		095BE5C21919C23300C968DE /* Scribble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scribble.h; path = markModel/Scribble.h; sourceTree = "<group>"; };
-		095BE5C41919D1B800C968DE /* ScribbleMemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScribbleMemento.m; path = markModel/ScribbleMemento.m; sourceTree = "<group>"; };
-		095BE5C51919D1B800C968DE /* ScribbleMemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleMemento.h; path = markModel/ScribbleMemento.h; sourceTree = "<group>"; };
-		095BE5CB191A13C700C968DE /* ScribbleMemento_friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ScribbleMemento_friend.h; path = markModel/ScribbleMemento_friend.h; sourceTree = "<group>"; };
-		096BAB5A192196C000388D23 /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleThumbnailView.h; path = markModel/ScribbleThumbnailView.h; sourceTree = "<group>"; };
-		096BAB5B192196C000388D23 /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScribbleThumbnailView.m; path = markModel/ScribbleThumbnailView.m; sourceTree = "<group>"; };
-		096BAB5D192199DD00388D23 /* ScribbleThumbnaiViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleThumbnaiViewProxy.h; path = markModel/ScribbleThumbnaiViewProxy.h; sourceTree = "<group>"; };
-		096BAB5E192199DD00388D23 /* ScribbleThumbnaiViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScribbleThumbnaiViewProxy.m; path = markModel/ScribbleThumbnaiViewProxy.m; sourceTree = "<group>"; };
-		096BAB601921D06400388D23 /* ScribbleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleManager.h; path = markModel/ScribbleManager.h; sourceTree = "<group>"; };
-		096BAB611921D06400388D23 /* ScribbleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScribbleManager.m; path = markModel/ScribbleManager.m; sourceTree = "<group>"; };
 		09883619193056D00061BD70 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		098A203A19441E9300E7ECA1 /* BuildCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildCardViewController.h; sourceTree = "<group>"; };
 		098A203B19441E9300E7ECA1 /* BuildCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildCardViewController.m; sourceTree = "<group>"; };
@@ -182,13 +171,6 @@
 		09B913ED192DB56C00A16F08 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		09B913EE192DB56C00A16F08 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		09BC254B194959B8009A7C64 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		09BD63D71919093500837015 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vertex.m; path = markModel/Vertex.m; sourceTree = "<group>"; };
-		09BD63D81919093500837015 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vertex.h; path = markModel/Vertex.h; sourceTree = "<group>"; };
-		09BD63D91919093500837015 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Stroke.m; path = markModel/Stroke.m; sourceTree = "<group>"; };
-		09BD63DA1919093500837015 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stroke.h; path = markModel/Stroke.h; sourceTree = "<group>"; };
-		09BD63DB1919093500837015 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mark.h; path = markModel/Mark.h; sourceTree = "<group>"; };
-		09BD63DC1919093500837015 /* Dot.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Dot.mm; path = markModel/Dot.mm; sourceTree = "<group>"; };
-		09BD63DD1919093500837015 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dot.h; path = markModel/Dot.h; sourceTree = "<group>"; };
 		09E7802E18BC77B500A4D4F6 /* AccessCharWithDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessCharWithDatabase.h; sourceTree = "<group>"; };
 		09E7802F18BC77B500A4D4F6 /* AccessCharWithDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessCharWithDatabase.m; sourceTree = "<group>"; };
 		09E7803118BC7BB200A4D4F6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -205,6 +187,24 @@
 		09F70C1119357F0300619786 /* addLearningPackage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addLearningPackage.png; path = res/addLearningPackage.png; sourceTree = "<group>"; };
 		09F70C131935F74D00619786 /* packageNameIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = packageNameIcon.png; path = res/packageNameIcon.png; sourceTree = "<group>"; };
 		09F9486519491CDE0005BEA9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E1A9A4DB194F04ED00D4C9AC /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dot.h; path = ../../markModel/Dot.h; sourceTree = "<group>"; };
+		E1A9A4DC194F04ED00D4C9AC /* Dot.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Dot.mm; path = ../../markModel/Dot.mm; sourceTree = "<group>"; };
+		E1A9A4DD194F04ED00D4C9AC /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mark.h; path = ../../markModel/Mark.h; sourceTree = "<group>"; };
+		E1A9A4DE194F04ED00D4C9AC /* Scribble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scribble.h; path = ../../markModel/Scribble.h; sourceTree = "<group>"; };
+		E1A9A4DF194F04ED00D4C9AC /* Scribble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Scribble.m; path = ../../markModel/Scribble.m; sourceTree = "<group>"; };
+		E1A9A4E0194F04ED00D4C9AC /* ScribbleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleManager.h; path = ../../markModel/ScribbleManager.h; sourceTree = "<group>"; };
+		E1A9A4E1194F04ED00D4C9AC /* ScribbleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScribbleManager.m; path = ../../markModel/ScribbleManager.m; sourceTree = "<group>"; };
+		E1A9A4E2194F04ED00D4C9AC /* ScribbleMemento_friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleMemento_friend.h; path = ../../markModel/ScribbleMemento_friend.h; sourceTree = "<group>"; };
+		E1A9A4E3194F04ED00D4C9AC /* ScribbleMemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleMemento.h; path = ../../markModel/ScribbleMemento.h; sourceTree = "<group>"; };
+		E1A9A4E4194F04ED00D4C9AC /* ScribbleMemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScribbleMemento.m; path = ../../markModel/ScribbleMemento.m; sourceTree = "<group>"; };
+		E1A9A4E5194F04ED00D4C9AC /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleThumbnailView.h; path = ../../markModel/ScribbleThumbnailView.h; sourceTree = "<group>"; };
+		E1A9A4E6194F04ED00D4C9AC /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScribbleThumbnailView.m; path = ../../markModel/ScribbleThumbnailView.m; sourceTree = "<group>"; };
+		E1A9A4E7194F04ED00D4C9AC /* ScribbleThumbnaiViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScribbleThumbnaiViewProxy.h; path = ../../markModel/ScribbleThumbnaiViewProxy.h; sourceTree = "<group>"; };
+		E1A9A4E8194F04ED00D4C9AC /* ScribbleThumbnaiViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScribbleThumbnaiViewProxy.m; path = ../../markModel/ScribbleThumbnaiViewProxy.m; sourceTree = "<group>"; };
+		E1A9A4E9194F04ED00D4C9AC /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stroke.h; path = ../../markModel/Stroke.h; sourceTree = "<group>"; };
+		E1A9A4EA194F04ED00D4C9AC /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Stroke.m; path = ../../markModel/Stroke.m; sourceTree = "<group>"; };
+		E1A9A4EB194F04ED00D4C9AC /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vertex.h; path = ../../markModel/Vertex.h; sourceTree = "<group>"; };
+		E1A9A4EC194F04ED00D4C9AC /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vertex.m; path = ../../markModel/Vertex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,29 +314,11 @@
 				092BB6741926EE87008BD8F1 /* DrawScribbleCommandManager.h */,
 				092BB6751926EE87008BD8F1 /* DrawScribbleCommandManager.m */,
 				092BB6721926E09D008BD8F1 /* DrawScribbleCommand.m */,
-				096BAB5A192196C000388D23 /* ScribbleThumbnailView.h */,
-				096BAB5B192196C000388D23 /* ScribbleThumbnailView.m */,
-				096BAB5D192199DD00388D23 /* ScribbleThumbnaiViewProxy.h */,
-				096BAB5E192199DD00388D23 /* ScribbleThumbnaiViewProxy.m */,
-				096BAB601921D06400388D23 /* ScribbleManager.h */,
-				096BAB611921D06400388D23 /* ScribbleManager.m */,
 				09553C39192092530091DE87 /* Dropbox.h */,
-				095BE5CB191A13C700C968DE /* ScribbleMemento_friend.h */,
-				095BE5C41919D1B800C968DE /* ScribbleMemento.m */,
-				095BE5C51919D1B800C968DE /* ScribbleMemento.h */,
 				0917CF35191B2F2C0068A41D /* CanvasViewController.h */,
 				0917CF38191B2F5B0068A41D /* CanvasView.h */,
 				0917CF39191B2F5B0068A41D /* CanvasView.m */,
 				0917CF36191B2F2C0068A41D /* CanvasViewController.m */,
-				095BE5C11919C23300C968DE /* Scribble.m */,
-				095BE5C21919C23300C968DE /* Scribble.h */,
-				09BD63D71919093500837015 /* Vertex.m */,
-				09BD63D81919093500837015 /* Vertex.h */,
-				09BD63D91919093500837015 /* Stroke.m */,
-				09BD63DA1919093500837015 /* Stroke.h */,
-				09BD63DB1919093500837015 /* Mark.h */,
-				09BD63DC1919093500837015 /* Dot.mm */,
-				09BD63DD1919093500837015 /* Dot.h */,
 				09A507DB18B9DA2700772141 /* CharacterModel.h */,
 				09E7802E18BC77B500A4D4F6 /* AccessCharWithDatabase.h */,
 				091977461915BFF0006341A9 /* BasicAccessor.h */,
@@ -373,6 +355,24 @@
 				09B231F5192C9B5C00C51F13 /* InitialViewController.h */,
 				09981CF318B7549900A350C1 /* ViewController.h */,
 				09981CF418B7549900A350C1 /* ViewController.m */,
+				E1A9A4DB194F04ED00D4C9AC /* Dot.h */,
+				E1A9A4DC194F04ED00D4C9AC /* Dot.mm */,
+				E1A9A4DD194F04ED00D4C9AC /* Mark.h */,
+				E1A9A4DE194F04ED00D4C9AC /* Scribble.h */,
+				E1A9A4DF194F04ED00D4C9AC /* Scribble.m */,
+				E1A9A4E0194F04ED00D4C9AC /* ScribbleManager.h */,
+				E1A9A4E1194F04ED00D4C9AC /* ScribbleManager.m */,
+				E1A9A4E2194F04ED00D4C9AC /* ScribbleMemento_friend.h */,
+				E1A9A4E3194F04ED00D4C9AC /* ScribbleMemento.h */,
+				E1A9A4E4194F04ED00D4C9AC /* ScribbleMemento.m */,
+				E1A9A4E5194F04ED00D4C9AC /* ScribbleThumbnailView.h */,
+				E1A9A4E6194F04ED00D4C9AC /* ScribbleThumbnailView.m */,
+				E1A9A4E7194F04ED00D4C9AC /* ScribbleThumbnaiViewProxy.h */,
+				E1A9A4E8194F04ED00D4C9AC /* ScribbleThumbnaiViewProxy.m */,
+				E1A9A4E9194F04ED00D4C9AC /* Stroke.h */,
+				E1A9A4EA194F04ED00D4C9AC /* Stroke.m */,
+				E1A9A4EB194F04ED00D4C9AC /* Vertex.h */,
+				E1A9A4EC194F04ED00D4C9AC /* Vertex.m */,
 				09981CF618B7549900A350C1 /* Images.xcassets */,
 				09981CE518B7549900A350C1 /* Supporting Files */,
 			);
@@ -526,38 +526,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				0919774B1915C31E006341A9 /* Study_Check.m in Sources */,
+				E1A9A4F4194F04ED00D4C9AC /* Vertex.m in Sources */,
 				09AB3865193AF35A00A2D296 /* BrowsePhotosViewController.m in Sources */,
 				092BB6761926EE87008BD8F1 /* DrawScribbleCommandManager.m in Sources */,
-				096BAB5F192199DE00388D23 /* ScribbleThumbnaiViewProxy.m in Sources */,
 				090A1C201943E46D00D03081 /* AlbumThumbnialViewCell.m in Sources */,
 				09B231F6192C9B5C00C51F13 /* StartViewController.m in Sources */,
-				09BD63E01919093500837015 /* Dot.mm in Sources */,
 				098A203F1944870F00E7ECA1 /* LearningViewController.m in Sources */,
 				091977481915BFF0006341A9 /* BasicAccessor.m in Sources */,
-				096BAB5C192196C000388D23 /* ScribbleThumbnailView.m in Sources */,
-				096BAB621921D06400388D23 /* ScribbleManager.m in Sources */,
+				E1A9A4EE194F04ED00D4C9AC /* Scribble.m in Sources */,
 				09AE4A9D19431DA200D4BDFD /* BrowseAlbumViewController.m in Sources */,
 				0917CF37191B2F2C0068A41D /* CanvasViewController.m in Sources */,
 				0917CF3A191B2F5B0068A41D /* CanvasView.m in Sources */,
 				09AE4AA01943355B00D4BDFD /* PicInfo.m in Sources */,
 				09981CF518B7549900A350C1 /* ViewController.m in Sources */,
 				092BB6731926E09D008BD8F1 /* DrawScribbleCommand.m in Sources */,
+				E1A9A4F1194F04ED00D4C9AC /* ScribbleThumbnailView.m in Sources */,
 				09F70C0B19346F4600619786 /* ArrangeLearningPackageViewController.m in Sources */,
 				092BB6701926DEC8008BD8F1 /* command.m in Sources */,
-				095BE5C61919D1B800C968DE /* ScribbleMemento.m in Sources */,
+				E1A9A4EF194F04ED00D4C9AC /* ScribbleManager.m in Sources */,
 				09981CEF18B7549900A350C1 /* AppDelegate.m in Sources */,
 				094B2B061937F61E00174AA6 /* UIView+AnimationExtensions.m in Sources */,
+				E1A9A4F2194F04ED00D4C9AC /* ScribbleThumbnaiViewProxy.m in Sources */,
 				09E7803018BC77B500A4D4F6 /* AccessCharWithDatabase.m in Sources */,
-				09BD63DE1919093500837015 /* Vertex.m in Sources */,
 				094C79DF19466DDE00205BCA /* ExerciseViewController.m in Sources */,
-				095BE5C31919C23300C968DE /* Scribble.m in Sources */,
 				09981CEB18B7549900A350C1 /* main.m in Sources */,
 				09B913EF192DB56C00A16F08 /* WebViewController.m in Sources */,
 				09B231F7192C9B5C00C51F13 /* InitialViewController.m in Sources */,
+				E1A9A4F3194F04ED00D4C9AC /* Stroke.m in Sources */,
 				09443C8F193D83F000DFFD71 /* PhotoCell.m in Sources */,
+				E1A9A4ED194F04ED00D4C9AC /* Dot.mm in Sources */,
 				09A507DD18B9DA2700772141 /* CharacterModel.mm in Sources */,
 				098A203C19441E9300E7ECA1 /* BuildCardViewController.m in Sources */,
-				09BD63DF1919093500837015 /* Stroke.m in Sources */,
+				E1A9A4F0194F04ED00D4C9AC /* ScribbleMemento.m in Sources */,
 				09B913EC192D8AB700A16F08 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

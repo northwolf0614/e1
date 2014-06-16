@@ -10,7 +10,7 @@
 #import <AVFoundation/AVMediaFormat.h>
 
 #define REAPETATIONTIMES 5
-#define SLEEPTIME 2
+#define SLEEPTIME 1
 @interface CharacterModel()
 
 -(void)playURL:(NSURL*) url;
@@ -41,8 +41,8 @@
 {
     
     
-    if (![self downloaded])
-    {
+    //if (![self downloaded])
+    //{
         for(int i=0;i<REAPETATIONTIMES;i++)
             
         {
@@ -63,12 +63,16 @@
             //获得返回的mp3文件,格式为NSdata
             NSData *voiceData = [[NSData alloc] initWithContentsOfURL:url];
             
-  
+            
+            
+            
             [NSThread sleepForTimeInterval:SLEEPTIME];//等待3秒获取google词库的发音数据
     
             if(voiceData)
         
             {
+                [self play:voiceData];
+                /*
                 [self willChangeValueForKey:@"downloadInfo"];//call KVO manually
                 [self setWordData:voiceData];
                 NSLog(@"已经1次性获取到voice");
@@ -96,13 +100,16 @@
                 
                 //[self setDownloadedFileDirectory:[documentsDirectory stringByAppendingPathComponent:ch]];
                 [self didChangeValueForKey:@"downloadInfo"];//call KVO manually
-                [self playURL:[self currentURL]];
+                //[self playURL:[self currentURL]];
+                [self play:[self wordData]];
+                 */
                 break;
         
             }
+            
         }
     
-    }
+    //}
     
     
         
