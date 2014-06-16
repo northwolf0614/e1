@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2536FF95-C8FC-4C2B-B391-3728384CB7E0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>E1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>289DF737-5C88-4892-A6D1-D945553FD012</key>
+		<string>https://bitbucket.org/northwolf0614/ios-repository.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>E1/E1/E1.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>289DF737-5C88-4892-A6D1-D945553FD012</key>
+		<string>../../../../../../Documents/E-Learner versions/ios_repository 2014.6.9</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/northwolf0614/ios-repository.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>289DF737-5C88-4892-A6D1-D945553FD012</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>289DF737-5C88-4892-A6D1-D945553FD012</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_repo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>289DF737-5C88-4892-A6D1-D945553FD012</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_repo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
