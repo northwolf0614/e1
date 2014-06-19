@@ -8,12 +8,115 @@
 
 #import "ExerciseViewController.h"
 #import "BasicAccessor.h"
+#define AlertViewShowingTime 1
+
+#define SystemTopSystemBarHeight 20
+
+#define KeyPointLabel_X_Scale 0.4492
+#define KeyPointLabel_Y_Scale 0.7959
+
+#define ContentKeyPoint_X_Scale 0.4492
+#define ContentKeyPoint_Y_Scale 0.8360
+
+#define Speaker_X_Scale 0.7903
+#define Speaker_Y_Scale 0.7959
 
 @interface ExerciseViewController ()
 
 @end
 
 @implementation ExerciseViewController
+-(void) handleGesture:(UISwipeGestureRecognizer*) gesture
+{
+    if (gesture.direction==UISwipeGestureRecognizerDirectionLeft) {
+        if (++_currentIndex<[[self databaseRecords] count])
+        {
+            [self setCurrentRecord: [[self databaseRecords] objectAtIndex:_currentIndex]];
+            
+            dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                DBPath* dropboxPackagePath = [[[DBPath root] childPath:[self currentPackageName]] childPath:@"photos"];
+                DBPath* picImagePath= [dropboxPackagePath childPath:[[self currentRecord] pictureName ]];
+                NSData* data=[[self dropBoxDelegate] readFile:picImagePath];
+                UIImage* img= [UIImage imageWithData:data];
+                [[self image] setImage:img];
+                
+            });
+            [[self content_keyPoint] setText:[[self currentRecord] pointOfLearning]];
+        }
+        else
+        {
+            NSLog(@"this is the last learning card");
+            [[self alertViewLast] show];
+            [NSThread sleepForTimeInterval:AlertViewShowingTime];
+            [[self alertViewLast] dismissWithClickedButtonIndex:0 animated:YES];
+            
+            
+            [self setCurrentIndex:[[self databaseRecords] count]-1];
+        }
+        
+        
+    }
+    if (gesture.direction==UISwipeGestureRecognizerDirectionRight) {
+        if (--_currentIndex>=0)
+        {
+            [self setCurrentRecord: [[self databaseRecords] objectAtIndex:_currentIndex]];
+            
+            dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                DBPath* dropboxPackagePath = [[[DBPath root] childPath:[self currentPackageName]] childPath:@"photos"];
+                DBPath* picImagePath= [dropboxPackagePath childPath:[[self currentRecord] pictureName ]];
+                NSData* data=[[self dropBoxDelegate] readFile:picImagePath];
+                UIImage* img= [UIImage imageWithData:data];
+                [[self image] setImage:img];
+                
+            });
+            [[self content_keyPoint] setText:[[self currentRecord] pointOfLearning]];
+        }
+        else
+        {
+            NSLog(@"this is the first learning card");
+            
+            [[self alertViewFirst] show];
+            [NSThread sleepForTimeInterval:AlertViewShowingTime];
+            [[self alertViewFirst] dismissWithClickedButtonIndex:0 animated:YES];
+            
+            [self setCurrentIndex:0];
+        }
+        
+    }
+    
+}
+
+-(void) handleRightSwipeGesture:(UISwipeGestureRecognizer*) gesture
+{
+    if (++_currentIndex<[[self databaseRecords] count])
+    {
+        [self setCurrentRecord: [[self databaseRecords] objectAtIndex:_currentIndex]];
+        
+        dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            DBPath* dropboxPackagePath = [[[DBPath root] childPath:[self currentPackageName]] childPath:@"photos"];
+            DBPath* picImagePath= [dropboxPackagePath childPath:[[self currentRecord] pictureName ]];
+            NSData* data=[[self dropBoxDelegate] readFile:picImagePath];
+            UIImage* img= [UIImage imageWithData:data];
+            [[self image] setImage:img];
+            
+        });
+        [[self content_keyPoint] setText:[[self currentRecord] pointOfLearning]];
+    }
+    else
+    {
+        NSLog(@"this is the last learning card");
+        [[self alertViewLast] show];
+        [NSThread sleepForTimeInterval:AlertViewShowingTime];
+        [[self alertViewLast] dismissWithClickedButtonIndex:0 animated:YES];
+        
+        
+        [self setCurrentIndex:[[self databaseRecords] count]-1];
+    }
+    
+    
+    
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +136,48 @@
         [[self recordModel] setIsDeleteRecordedFile:NO];
     }
     
+    //[[self view] addSubview:[self imageView]];
+    dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        DBPath* dropboxPackagePath = [[[DBPath root] childPath:[self currentPackageName]] childPath:@"photos"];
+        DBPath* picImagePath= [dropboxPackagePath childPath:[[self currentRecord] pictureName ]];
+        NSData* data=[[self dropBoxDelegate] readFile:picImagePath];
+        UIImage* img= [UIImage imageWithData:data];
+        [[self image] setImage:img];
+        
+    });
+    
+    [[self content_keyPoint] setText:[[self currentRecord] pointOfLearning]];
+    /*
+     DBPath* dropboxPackagePath = [[[DBPath root] childPath:[self currentPackageName]] childPath:@"photos"];
+     DBPath* picImagePath= [dropboxPackagePath childPath:[[self record] pictureName ]];
+     NSData* data=[[self dropBoxDelegate] readFile:picImagePath];
+     UIImage* img= [UIImage imageWithData:data];
+     */
+    
+    // Do any additional setup after loading the view.
+    UIAlertView* alertViewFirst= [[UIAlertView alloc] initWithTitle:@"提示" message:@"这已经是第一张图片了" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+    [self setAlertViewFirst:alertViewFirst];
+    [[self alertViewFirst] setAlertViewStyle:UIAlertViewStyleDefault];
+    
+    UIAlertView* alertViewLast= [[UIAlertView alloc] initWithTitle:@"提示" message:@"这已经是最后一张图片了" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+    [self setAlertViewLast:alertViewLast];
+    [[self alertViewLast] setAlertViewStyle:UIAlertViewStyleDefault];
+    
+    
+    UISwipeGestureRecognizer *leftSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc]
+                                                            initWithTarget:self
+                                                            action:@selector(handleGesture:)];
+    [leftSwipeGestureRecognizer setDirection:UISwipeGestureRecognizerDirectionLeft];
+    
+    
+    UISwipeGestureRecognizer *rightSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc]
+                                                             initWithTarget:self
+                                                             action:@selector(handleGesture:)];
+    [rightSwipeGestureRecognizer setDirection:UISwipeGestureRecognizerDirectionRight ];
+    
+    [[self view] addGestureRecognizer:leftSwipeGestureRecognizer];
+    [[self view] addGestureRecognizer:rightSwipeGestureRecognizer];
+    
     
     
     
@@ -49,7 +194,7 @@
 //start to record
 - (IBAction)recorderClickedDown:(id)sender
 {
-    [[self recordModel] recordStory:@"recordedAudio.mp3"];
+    [[self recordModel] recordStory:@"recordedAudio"];
     
     
     
@@ -57,7 +202,6 @@
 - (IBAction)recorderClickedUp:(id)sender
 {
     [[self recordModel] stopRecordStory];
-    [[self recordModel] recordedFile];
     [self beginRecognition];
 }
 
@@ -224,6 +368,24 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)viewDidLayoutSubviews
+{
+    CGRect rectView= [[self view] bounds];
+    
+    CGRect rectNavBar=[[[self navigationController] navigationBar] frame];
+    
+    
+    [[self image] setFrame: CGRectMake(0, rectNavBar.size.height+SystemTopSystemBarHeight, rectView.size.width, 0.5*rectView.size.height)];
+    
+    
+    [[self keyPoint_label] setFrame:CGRectMake(rectView.size.width*KeyPointLabel_X_Scale,rectView.size.height*KeyPointLabel_Y_Scale, [[self keyPoint_label] frame].size.width,[[self keyPoint_label] frame].size.height)];
+    
+    [[self content_keyPoint] setFrame:CGRectMake(rectView.size.width*ContentKeyPoint_X_Scale,rectView.size.height*ContentKeyPoint_Y_Scale, [[self content_keyPoint] frame].size.width,[[self content_keyPoint] frame].size.height)];
+    
+    [[self recorder] setFrame:CGRectMake(rectView.size.width*Speaker_X_Scale,rectView.size.height*Speaker_Y_Scale, [[self recorder] frame].size.width,[[self recorder] frame].size.height)];
+    
+    
+}
 
 
 

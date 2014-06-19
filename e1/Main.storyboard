@@ -412,11 +412,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CsH-iF-JS6">
-                                <rect key="frame" x="20" y="27" width="566" height="739"/>
+                                <rect key="frame" x="0.0" y="27" width="768" height="691"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKd-9r-LXa">
-                                <rect key="frame" x="446" y="879" width="60" height="30"/>
+                                <rect key="frame" x="446" y="860" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="按住发音">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -427,14 +427,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学习重点" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDX-Df-VmL">
-                                <rect key="frame" x="282" y="860" width="68" height="21"/>
+                                <rect key="frame" x="269" y="817" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W7-FG-cvg">
-                                <rect key="frame" x="282" y="907" width="42" height="21"/>
+                                <rect key="frame" x="269" y="864" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -444,6 +444,7 @@
                     </view>
                     <connections>
                         <outlet property="content_keyPoint" destination="0W7-FG-cvg" id="qxz-Dn-7xp"/>
+                        <outlet property="image" destination="CsH-iF-JS6" id="Y4y-A9-OlK"/>
                         <outlet property="keyPoint_label" destination="bDX-Df-VmL" id="daF-oh-vm1"/>
                         <outlet property="recorder" destination="cKd-9r-LXa" id="rTa-2R-uap"/>
                     </connections>

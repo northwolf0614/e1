@@ -19,17 +19,18 @@
 @property (weak, nonatomic) IBOutlet UILabel *keyPoint_label;
 @property(nonatomic,strong) CharacterModel* recordModel;
 @property (weak, nonatomic) IBOutlet UIButton *recorder;
-@property(strong,nonatomic)NSURLConnection* urlConnection;
-@property(strong,nonatomic)NSMutableData* receivedData;
+@property(strong,nonatomic) NSURLConnection* urlConnection;
+@property(strong,nonatomic) NSMutableData* receivedData;
 
 
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 
-@property(nonatomic,weak) id<AccessingWithDropBox> dropBoxDelegate;
+@property(nonatomic,weak)  id<AccessingWithDropBox> dropBoxDelegate;
 @property(nonatomic,strong) Content* currentRecord;
 @property(nonatomic,strong) NSString* currentPackageName;
 
-@property(nonatomic,strong)NSMutableArray* databaseRecords;
+@property(nonatomic,strong) NSMutableArray* databaseRecords;
 @property(nonatomic,assign) NSInteger currentIndex;
 
 @property(nonatomic,strong) UIAlertView* alertViewFirst;

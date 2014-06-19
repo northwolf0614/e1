@@ -5,44 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2536FF95-C8FC-4C2B-B391-3728384CB7E0</string>
+	<string>6732FD86-0C7A-4D55-B5DD-FFA30421F4F5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>E1</string>
+	<string>e1</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>289DF737-5C88-4892-A6D1-D945553FD012</key>
-		<string>https://bitbucket.org/northwolf0614/ios-repository.git</string>
+		<key>56B16A10-0901-4543-B320-13D6B6334029</key>
+		<string>https://github.com/northwolf0614/e1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>E1/E1/E1.xcodeproj/project.xcworkspace</string>
+	<string>e1.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>289DF737-5C88-4892-A6D1-D945553FD012</key>
-		<string>../../../../../../Documents/E-Learner versions/ios_repository 2014.6.9</string>
+		<key>56B16A10-0901-4543-B320-13D6B6334029</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/northwolf0614/ios-repository.git</string>
+	<string>https://github.com/northwolf0614/e1.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>289DF737-5C88-4892-A6D1-D945553FD012</string>
+	<string>56B16A10-0901-4543-B320-13D6B6334029</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>289DF737-5C88-4892-A6D1-D945553FD012</string>
+			<string>56B16A10-0901-4543-B320-13D6B6334029</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ios_repo</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>289DF737-5C88-4892-A6D1-D945553FD012</string>
-			<key>IDESourceControlWCCName</key>
-			<string>ios_repo</string>
+			<string>e1</string>
 		</dict>
 	</array>
 </dict>

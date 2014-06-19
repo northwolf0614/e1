@@ -222,35 +222,21 @@
     if(![self recorded])
     {
         
-        NSMutableDictionary* recordSetting = [[NSMutableDictionary alloc] init];
-        ///only for record
-    
-        [recordSetting setValue :[NSNumber numberWithInt:kAudioFormatAppleIMA4] forKey:AVFormatIDKey];
-        [recordSetting setValue:[NSNumber numberWithFloat:44000] forKey:AVSampleRateKey];
-        [recordSetting setValue:[NSNumber numberWithInt: 1] forKey:AVNumberOfChannelsKey];
-        ///only for record
-        /*
-        //for audio recognition
-        [recordSetting setValue:[NSNumber numberWithFloat:16000] forKey:AVSampleRateKey];
-        [recordSetting setValue:[NSNumber numberWithInt: 1] forKey:AVNumberOfChannelsKey];
-        [recordSetting setValue:[NSNumber numberWithInteger:AVAudioQualityLow]
-                    forKey:AVEncoderAudioQualityKey];
-        [recordSetting setValue:[NSNumber numberWithInteger:kAudioFormatLinearPCM]
-                    forKey:AVFormatIDKey];
-        //for audio recognition
-        */
+         NSMutableDictionary *recordSetting = [NSMutableDictionary dictionary];
+              [recordSetting setValue:[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
+              [recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
+              [recordSetting setValue:[NSNumber numberWithInt:1] forKey:AVNumberOfChannelsKey];
+
         //file stored in document directory
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentsDirectory = [paths objectAtIndex:0];
-        NSString* appFile_1 =[documentsDirectory stringByAppendingPathComponent:ch];
-        NSURL* recordedTmpFile = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@.wav",appFile_1] isDirectory:NO];
-        //NSURL* recordedTmpFile = [NSURL fileURLWithPath:appFile_1 isDirectory:NO];
-        //file stored in document directory
         
-        [self setRecordedFile:recordedTmpFile];
-        //file stored in document directory
+        NSString* recordFilePath =[[documentsDirectory stringByAppendingPathComponent:ch] stringByAppendingString:@".wav"];
     
-        //Setup the recorder to use this file and record to it.
+        //NSFileManager* fm= [NSFileManager defaultManager];
+        //[fm createFileAtPath:recordFilePath contents:nil attributes:nil];
+        NSURL* recordedTmpFile = [NSURL fileURLWithPath:recordFilePath isDirectory:NO];
+        [self setRecordedFile:recordedTmpFile];
         AVAudioRecorder* newRecorder = [[ AVAudioRecorder alloc] initWithURL:[self recordedFile] settings:recordSetting error:&error];
     
         
@@ -281,13 +267,14 @@
     
     [[self avAudioRecorder] stop];
     NSError* error=nil;
-    if(![self isDeleteRecordedFile])//store the data to member:recordedData
-    {
+    //if(![self isDeleteRecordedFile])//store the data to member:recordedData
+    //{
         [self willChangeValueForKey:@"recordInfo"];//manually KVO
         [self setRecordData:[NSData dataWithContentsOfURL:[self recordedFile]]];
         [self setRecorded:YES];
         [self didChangeValueForKey:@"recordInfo"];//manually KVO
-    }
+    //}
+   /*
     else//delete the recorded file
     {
         NSFileManager * fm = [NSFileManager defaultManager];
@@ -298,6 +285,7 @@
         }
         
     }
+    */
     
     
     

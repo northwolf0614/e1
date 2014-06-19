@@ -17,7 +17,7 @@
                BlueprintIdentifier = "09981CDA18B7549900A350C1"
                BuildableName = "E1.app"
                BlueprintName = "E1"
-               ReferencedContainer = "container:E1.xcodeproj">
+               ReferencedContainer = "container:e1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "09981CFB18B7549900A350C1"
                BuildableName = "E1Tests.xctest"
                BlueprintName = "E1Tests"
-               ReferencedContainer = "container:E1.xcodeproj">
+               ReferencedContainer = "container:e1.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "09981CDA18B7549900A350C1"
             BuildableName = "E1.app"
             BlueprintName = "E1"
-            ReferencedContainer = "container:E1.xcodeproj">
+            ReferencedContainer = "container:e1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "09981CDA18B7549900A350C1"
             BuildableName = "E1.app"
             BlueprintName = "E1"
-            ReferencedContainer = "container:E1.xcodeproj">
+            ReferencedContainer = "container:e1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "09981CDA18B7549900A350C1"
             BuildableName = "E1.app"
             BlueprintName = "E1"
-            ReferencedContainer = "container:E1.xcodeproj">
+            ReferencedContainer = "container:e1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
